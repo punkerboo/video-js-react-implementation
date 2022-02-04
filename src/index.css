@@ -13,3 +13,33 @@ code {
 }
 
 .element::-webkit-scrollbar { width: 0 !important }
+
+.parent-container {
+  /* What happens if you remove position: relative? */
+  position: absolute; 
+  width: 500px; 
+  height: 500px; 
+  margin: 0 auto; 
+  border: 2px dashed #121a24; 
+}
+
+.green-box {
+  position: absolute; 
+  z-index: 1; 
+  margin-bottom: 5px; 
+  width: 200px; 
+  height: 200px; 
+  background: #62a60f; 
+  top: 200px; 
+  right: 200px; 
+}
+
+.red-box {
+  z-index: 2; 
+  position: absolute; 
+  width: 200px; 
+  height: 200px; 
+  background: #bb0c0c; 
+  bottom: 200px; 
+  left: 200px; 
+}
